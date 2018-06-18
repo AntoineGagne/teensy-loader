@@ -18,7 +18,7 @@ package() {
     install -d "${pkgdir}/usr/bin"
     install -d "${pkgdir}/etc/udev/rules.d"
 
-    mv ./49-teensy.rules "${pkgdir}/etc/udev/rules.d"
+    mv ../49-teensy.rules "${pkgdir}/etc/udev/rules.d"
     mv "${srcdir}/"{libpng12.so.0,libusb-0.1.so.4,teensy} "${pkgdir}/opt/${pkgname}/bin"
 
     ln -s "/opt/${pkgname}/bin/teensy" "${pkgdir}/usr/bin/teensy"
