@@ -27,4 +27,4 @@ tags
 src/
 pkg/
 *.tar
-*.tar.gz
+*.tar.*
